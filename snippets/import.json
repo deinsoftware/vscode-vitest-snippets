@@ -1,0 +1,7 @@
+{
+  "import": {
+    "prefix": "vi",
+    "body": "import { it, expect, describe } from 'vitest'$0",
+    "description": "essential imports for vitest"
+  }
+}

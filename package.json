@@ -1,0 +1,79 @@
+{
+  "name": "vitest-snippets",
+  "description": "VS Code Vitest snippets for JS and TS",
+  "version": "1.0.0",
+  "displayName": "Vitest Snippets",
+  "publisher": "deinsoftware",
+  "icon": "images/light-icon.png",
+  "keywords": [
+    "vitest",
+    "describe",
+    "expect",
+    "test",
+    "snippets",
+    "javascript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deinsoftware/vscode-vitest-snippets"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/deinsoftware"
+  },
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "main": "./build/extension.js",
+  "browser": "./build/extension.js",
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "activationEvents": [
+    "onCommand:extension.snippetSearch"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/import.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/setup.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/describe.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/it.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/test.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/expect.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/mock.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/assertion.json"
+      }
+    ]
+  },
+  "volta": {
+    "node": "18.7.0",
+    "npm": "8.15.0"
+  }
+}

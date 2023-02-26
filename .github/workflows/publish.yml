@@ -1,0 +1,38 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish-vsce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+      - run: npm i -g vsce
+      - run: vsce publish -p ${{ secrets.VSCE_PAT }}
+
+  tweet:
+    needs: publish-vsce
+    if: ${{ success() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Eomm/why-don-t-you-tweet@v1
+        if: ${{ !github.event.repository.private }}
+        with:
+          tweet-message: "Extension for @code with vitest snippets ${{ github.event.release.tag_name }} 🐛🔨 is here 🥳\n\n
+          $ ext install deinsoftware.vitest-snippets\n\n
+          #vscode #snippets #javascript #vitest\n\n
+          https://marketplace.visualstudio.com/items?itemName=deinsoftware.vitest-snippets"
+        env:
+          TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+          TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}

@@ -1,0 +1,27 @@
+{
+  "expect": {
+    "prefix": "ve",
+    "body": "expect($0)",
+    "description": "expect actual value"
+  },
+  "expect.assertions": {
+    "prefix": "veas",
+    "body": "expect.assertions($0);",
+    "description": "expects the test to make the indicated number of assertions (useful for async)"
+  },
+  "expect.hasAssertions": {
+    "prefix": "veha",
+    "body": "expect.hasAssertions()$0",
+    "description": "expects the test to make at least one assertion (useful for async)"
+  },
+  "expect.rejects": {
+    "prefix": "verj",
+    "body": "expect($1).rejects$0",
+    "description": "expect promise rejects to"
+  },
+  "expect.resolves": {
+    "prefix": "vers",
+    "body": "expect($1).resolves$0",
+    "description": "expect promise resolves to"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "afterAll": {
+    "prefix": "vaa",
+    "body": "afterAll(() => {\n\t$0\n});",
+    "description": "afterAll function is called once after all specs",
+    "scope": "source.js"
+  },
+  "afterEach": {
+    "prefix": "vae",
+    "body": "afterEach(() => {\n\t$0\n});",
+    "description": "afterEach function is called once after each spec",
+    "scope": "source.js"
+  },
+  "beforeAll": {
+    "prefix": "vba",
+    "body": "beforeAll(() => {\n\t$0\n});",
+    "description": "beforeAll function is called once before all specs",
+    "scope": "source.js"
+  },
+  "beforeAll:async": {
+    "prefix": "vbaa",
+    "body": "beforeAll(async () => {\n\t$0\n});",
+    "description": "beforeAll with async function is called once before all specs",
+    "scope": "source.js"
+  },
+  "beforeEach": {
+    "prefix": "vbe",
+    "body": "beforeEach(() => {\n\t$0\n});",
+    "description": "beforeEach function is called once before each spec",
+    "scope": "source.js"
+  },
+  "beforeEach:async": {
+    "prefix": "vbea",
+    "body": "beforeEach(async () => {\n\t$0\n});",
+    "description": "beforeEach with async callback function is called once before each spec",
+    "scope": "source.js"
+  }
+}
