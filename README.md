@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/github/license/deinsoftware/vscode-vitest-snippets)](LICENSE.md)
 [![Open in VS Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/deinsoftware/vscode-vitest-snippets)
 
-![Vitest](https://raw.githubusercontent.com/deinsoftware/vscode-vitest-snippets/main/.github/social/preview.png 'Vitest Snippets')
+![Vitest](https://raw.githubusercontent.com/deinsoftware/vscode-vitest-snippet/main/.github/social/preview.png)
 
 The quick and easy way to create and use Vitest with [VS Code](https://code.visualstudio.com/).
 
@@ -57,13 +57,6 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 | Language         | Extension |
 | ---------------- | --------- |
 | JavaScript       | `.js`     |
-| TypeScript       | `.ts`     |
-| JavaScript React | `.jsx`    |
-| TypeScript React | `.tsx`    |
-| Vue              | `.vue`    |
-| JSON             | `.json`   |
-| JSONC            | `.jsonc`  |
-| JSON5            | `.json5`  |
 
 ⇧ [Back to menu](#menu)
 
@@ -75,9 +68,9 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ### Import
 
-|  Trigger | Description                  | Result JS                                          | Result TS                                          |
-| -------: | ---------------------------- | -------------------------------------------------- | -------------------------------------------------- |
-|    `vi→` | essential imports for vitest | `import { it, expect, describe } from 'vitest'█`   | `import { it, expect, describe } from 'vitest'█`   |
+|  Trigger | Description                  | Result                                            |
+| -------: | ---------------------------- | ------------------------------------------------- |
+|    `iv→` | essential imports for vitest | `import { it, expect, describe } from 'vitest'█`  |
 
 ⇧ [Back to menu](#menu)
 
