@@ -1,59 +1,27 @@
 {
   "test": {
-    "prefix": "vt",
-    "body": "test('${1:should }', () => {\n\t$0\n});",
-    "description": "creates a test block",
-    "scope": "source.js"
-  },
-  "test.each": {
-    "prefix": "vte",
-    "body": [
-      "test.each([${1:[1, 2], [2, 4]}])(",
-      "\t'${2:double(%d)}',",
-      "\t(${3:input, expected}) => {",
-      "\t\t${0:expect(double(input)).toBe(expected);}",
-      "\t}",
-      ");"
-    ],
-    "description": "creates an test block with different test data sets",
-    "scope": "source.js"
-  },
-  "test.each (table)": {
-    "prefix": "vtet",
-    "body": [
-      "test.each`",
-      "\t${1:input}\t| ${2:expected}",
-      "\t\\${1}\t| \\${2}",
-      "\t\\${2}\t| \\${4}",
-      "`('${3:double($${1:input})}', ({ ${1:input}, ${2:expected} }) => {",
-      "\t${0:expect(double(${1:input})).toBe(${2:expected});}",
-      "});"
-    ],
-    "description": "creates a test block using a permutation table",
-    "scope": "source.js"
+    "prefix": "t",
+    "body": "test('${1:should}', () => {\n\t$0\n})",
+    "description": "creates a test block"
   },
   "test.only": {
-    "prefix": "vto",
-    "body": "test.only('${1:should }', () => {\n\t$0\n});",
-    "description": "creates a test block  that runs only",
-    "scope": "source.js"
+    "prefix": "to",
+    "body": "test.only('${1:should}', () => {\n\t$0\n})",
+    "description": "creates a test block that runs only"
   },
   "test.skip": {
-    "prefix": "vts",
-    "body": "test.skip('${1:should }', () => {\n\t$0\n});",
-    "description": "creates a test block that will be skipped",
-    "scope": "source.js"
+    "prefix": "ts",
+    "body": "test.skip('${1:should}', () => {\n\t$0\n})",
+    "description": "creates a test block that will be skipped"
   },
   "test.todo": {
-    "prefix": "vtt",
-    "body": "test.todo('${1:should }');",
-    "description": "creates a test placeholder",
-    "scope": "source.js"
+    "prefix": "ttd",
+    "body": "test.todo('${0:should}')",
+    "description": "creates a test placeholder"
   },
   "test:async": {
-    "prefix": "vta",
-    "body": "test('${1:should }', async () => {\n\t$0\n});",
-    "description": "creates an test block with async callback function",
-    "scope": "source.js"
+    "prefix": "ta",
+    "body": "test('${1:should}', async () => {\n\t$0\n})",
+    "description": "creates an test block with async callback function"
   }
 }

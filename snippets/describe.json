@@ -1,35 +1,17 @@
 {
   "describe": {
-    "prefix": "vd",
-    "body": "describe('${1:Name of the group}', () => {\n\t$0\n});",
-    "description": "creates a describe block",
-    "scope": "source.js"
-  },
-  "describe.each": {
-    "prefix": "vde",
-    "body": [
-      "describe.each([${1:[1, 2], [2, 4]}])(",
-      "\t'${2:double(%d)}',",
-      "\t(${3:input, expected}) => {",
-      "\t\ttest(`returns \\${expected}`, () => {",
-      "\t\t\t${4:expect(double(input)).toBe(expected);}",
-      "\t\t});",
-      "\t}",
-      ");"
-    ],
-    "description": "creates a describe block with different test data sets",
-    "scope": "source.js"
+    "prefix": "d",
+    "body": "describe('${1:group}', () => {\n\t$0\n})",
+    "description": "creates a describe block"
   },
   "describe.only": {
-    "prefix": "vdo",
-    "body": "describe.only('${1:Name of the group}', () => {\n\t$0\n});",
-    "description": "creates a describe block that runs only",
-    "scope": "source.js"
+    "prefix": "do",
+    "body": "describe.only('${1:group}', () => {\n\t$0\n})",
+    "description": "creates a describe block that runs only"
   },
   "describe.skip": {
-    "prefix": "vds",
-    "body": "describe.skip('${1:Name of the group}', () => {\n\t$0\n});",
-    "description": "creates a describe block that will be skipped",
-    "scope": "source.js"
+    "prefix": "ds",
+    "body": "describe.skip('${1:group}', () => {\n\t$0\n})",
+    "description": "creates a describe block that will be skipped"
   }
 }

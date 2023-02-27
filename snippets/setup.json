@@ -1,38 +1,32 @@
 {
   "afterAll": {
-    "prefix": "vaa",
-    "body": "afterAll(() => {\n\t$0\n});",
-    "description": "afterAll function is called once after all specs",
-    "scope": "source.js"
+    "prefix": "aa",
+    "body": "afterAll(() => {\n\t$0\n})",
+    "description": "afterAll function is called once after all specs"
   },
   "afterEach": {
-    "prefix": "vae",
-    "body": "afterEach(() => {\n\t$0\n});",
-    "description": "afterEach function is called once after each spec",
-    "scope": "source.js"
-  },
-  "beforeAll": {
-    "prefix": "vba",
-    "body": "beforeAll(() => {\n\t$0\n});",
-    "description": "beforeAll function is called once before all specs",
-    "scope": "source.js"
-  },
-  "beforeAll:async": {
-    "prefix": "vbaa",
-    "body": "beforeAll(async () => {\n\t$0\n});",
-    "description": "beforeAll with async function is called once before all specs",
-    "scope": "source.js"
+    "prefix": "ae",
+    "body": "afterEach(() => {\n\t$0\n})",
+    "description": "afterEach function is called once after each spec"
   },
   "beforeEach": {
-    "prefix": "vbe",
-    "body": "beforeEach(() => {\n\t$0\n});",
-    "description": "beforeEach function is called once before each spec",
-    "scope": "source.js"
+    "prefix": "be",
+    "body": "beforeEach(() => {\n\t$0\n})",
+    "description": "beforeEach function is called once before each spec"
   },
   "beforeEach:async": {
-    "prefix": "vbea",
-    "body": "beforeEach(async () => {\n\t$0\n});",
-    "description": "beforeEach with async callback function is called once before each spec",
-    "scope": "source.js"
+    "prefix": "bea",
+    "body": "beforeEach(async () => {\n\t$0\n})",
+    "description": "beforeEach with async callback function is called once before each spec"
+  },
+  "beforeAll": {
+    "prefix": "ba",
+    "body": "beforeAll(() => {\n\t$0\n})",
+    "description": "beforeAll function is called once before all specs"
+  },
+  "beforeAll:async": {
+    "prefix": "baa",
+    "body": "beforeAll(async () => {\n\t$0\n})",
+    "description": "beforeAll with async function is called once before all specs"
   }
 }

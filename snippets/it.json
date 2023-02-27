@@ -1,45 +1,27 @@
 {
   "it": {
-    "prefix": "vi",
-    "body": "it('${1:should }', () => {\n\t$0\n});",
-    "description": "creates an it block",
-    "scope": "source.js"
-  },
-  "it.each": {
-    "prefix": "vie",
-    "body": [
-      "it.each([${1:[1, 2], [2, 4]}])(",
-      "\t'${2:double(%d)}',",
-      "\t(${3:input, expected}) => {",
-      "\t\t${0:expect(double(input)).toBe(expected);}",
-      "\t}",
-      ");"
-    ],
-    "description": "creates an it block with different test data sets",
-    "scope": "source.js"
+    "prefix": "i",
+    "body": "it('${1:should}', () => {\n\t$0\n})",
+    "description": "creates an it block"
   },
   "it.only": {
-    "prefix": "vio",
-    "body": "it.only('${1:should }', () => {\n\t$0\n});",
-    "description": "creates an it block that runs only",
-    "scope": "source.js"
+    "prefix": "io",
+    "body": "it.only('${1:should}', () => {\n\t$0\n})",
+    "description": "creates an it block that runs only"
   },
   "it.skip": {
-    "prefix": "vis",
-    "body": "it.skip('${1:should }', () => {\n\t$0\n});",
-    "description": "creates an it block that will be skipped",
-    "scope": "source.js"
+    "prefix": "is",
+    "body": "it.skip('${1:should}', () => {\n\t$0\n})",
+    "description": "creates an it block that will be skipped"
   },
   "it.todo": {
-    "prefix": "vit",
-    "body": "it.todo('${1:should }');",
-    "description": "creates a test placeholder",
-    "scope": "source.js"
+    "prefix": "itd",
+    "body": "it.todo('${0:should}')",
+    "description": "creates a test placeholder"
   },
   "it:async": {
-    "prefix": "via",
-    "body": "it('${1:should }', async () => {\n\t$0\n});",
-    "description": "creates an it block with async callback function",
-    "scope": "source.js"
+    "prefix": "ia",
+    "body": "it('${1:should}', async () => {\n\t$0\n})",
+    "description": "creates an it block with async callback function"
   }
 }

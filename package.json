@@ -52,6 +52,10 @@
       },
       {
         "language": "javascript",
+        "path": "./snippets/mock.json"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/it.json"
       },
       {
@@ -64,16 +68,20 @@
       },
       {
         "language": "javascript",
-        "path": "./snippets/mock.json"
-      },
-      {
-        "language": "javascript",
         "path": "./snippets/assertion.json"
       }
     ]
   },
+  "scripts": {
+    "test": "vitest --run --reporter verbose",
+    "test:w": "vitest",
+    "test:ui": "vitest --ui"
+  },
   "volta": {
-    "node": "18.7.0",
-    "npm": "8.15.0"
+    "node": "18.14.2",
+    "npm": "9.5.0"
+  },
+  "devDependencies": {
+    "vitest": "0.29.1"
   }
 }

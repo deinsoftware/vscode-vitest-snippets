@@ -1,5 +1,23 @@
 {
-  "cSpell.words": ["deinsoftware", "Equiman", "github", "paypal", "volta"],
+  "cSpell.words": [
+    "deinsoftware",
+    "Equiman",
+    "github",
+    "paypal",
+    "tbct",
+    "tbgt",
+    "tbgte",
+    "tblt",
+    "tblte",
+    "thbc",
+    "thbct",
+    "thbcw",
+    "thblcw",
+    "tmis",
+    "ttemis",
+    "ttems",
+    "volta"
+  ],
   "markdownlint.config": {
     "MD024": { "siblings_only": true },
     "MD033": false
