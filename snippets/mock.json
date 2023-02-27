@@ -25,7 +25,7 @@
     "description": "assign a return value"
   },
   "mock.mockReturnValueOnce": {
-    "prefix": "mrv",
+    "prefix": "mrvo",
     "body": "{$1:mock}.mockReturnValueOnce($0)",
     "description": "assign a return value for only one call"
   },
