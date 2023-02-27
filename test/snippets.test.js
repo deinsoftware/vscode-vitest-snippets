@@ -1,3 +1,5 @@
+import { it, expect, describe } from 'vitest'
+
 const importSnippets = require("../snippets/import.json")
 const setupSnippets = require("../snippets/setup.json")
 const describeSnippets = require("../snippets/describe.json")
