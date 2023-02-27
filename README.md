@@ -96,10 +96,18 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ### Mock
 
-|  Trigger | Result        |
-| -------: | ------------- |
-|    `vf→` | `vi.fn(█)`    |
-|    `vs→` | `vi.spyOn(█)` |
+|  Trigger | Result                                                                      |
+| -------: | --------------------------------------------------------------------------- |
+|    `vf→` | `vi.fn()█`                                                                  |
+|  `vfrv→` | `vi.fn().mockResolvedValue(█)`                                              |
+|    `cf→` | `const nameMock = vi.fn()█`                                                 |
+|  `cfrv→` | `const nameMock = vi.fn().mockResolvedValue(█)`                             |
+|   `mrv→` | `mock.mockReturnValue(█)`                                                   |
+|  `mrvo→` | `mock.mockReturnValueOnce(█)`                                               |
+|    `vs→` | `vi.spyOn(global, 'method')█`                                               |
+|   `vsi→` | `vi.spyOn(global, 'method').mockImplementation(() => █)`                    |
+|    `cs→` | `const methodSpy = vi.spyOn(global, 'method')█`                             |
+|   `csi→` | `const methodSpy = vi.spyOn(global, 'method').mockImplementation(() => █)`  |
 
 ### It
 

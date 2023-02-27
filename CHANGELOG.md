@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 1.1.0 - 2023/02/26
+
+### Added
+
+- Better mock and spy snippets
+
 ## 1.0.0 - 2023/02/26
 
 ### Added
