@@ -2,13 +2,11 @@
   "vi.fn": {
     "prefix": "vf",
     "body": "vi.fn($0)",
-    "description": "creates vi.fn()",
-    "scope": "source.js"
+    "description": "creates vi.fn()"
   },
   "vi.spyOn": {
     "prefix": "vs",
     "body": "vi.spyOn($0)",
-    "description": "creates vi.spyOn()",
-    "scope": "source.js"
+    "description": "creates vi.spyOn()"
   }
 }

@@ -18,12 +18,15 @@ The quick and easy way to create and use Vitest with [VS Code](https://code.visu
   - [Marketplace](#marketplace)
 - [Supported Languages](#supported-languages)
 - [Snippets](#snippets)
-  - [Variables](#variables)
-  - [Destructuring](#destructuring)
-  - [Object Elements](#object-elements)
-  - [JSON Elements](#json-elements)
-  - [React](#react)
-  - [React Components](#react-components)
+  - [Import](#import)
+  - [Setup](#setup)
+  - [Describe](#describe)
+  - [Mock](#mock)
+  - [It](#it)
+  - [Test](#test)
+  - [Expect](#expect)
+  - [Assertion](#assertion)
+- [Settings](#settings)
 - [About](#about)
 
 ---
@@ -68,9 +71,111 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ### Import
 
-|  Trigger | Description                  | Result                                            |
-| -------: | ---------------------------- | ------------------------------------------------- |
-|    `iv→` | essential imports for vitest | `import { it, expect, describe } from 'vitest'█`  |
+|  Trigger | Result                                            |
+| -------: | ------------------------------------------------- |
+|    `iv→` | `import { it, expect, describe } from 'vitest'█`  |
+
+### Setup
+
+|  Trigger | Result                                                          |
+| -------: | --------------------------------------------------------------- |
+|    `ae→` | <code>afterEach(() => {<br/>&nbsp;&nbsp;█<br/>})</code>         |
+|    `aa→` | <code>afterAll(() => {<br/>&nbsp;&nbsp;█<br/>})</code>          |
+|    `be→` | <code>beforeEach(() => {<br/>&nbsp;&nbsp;█<br/>})</code>        |
+|   `bea→` | <code>beforeEach(async () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|    `ba→` | <code>beforeAll(() => {<br/>&nbsp;&nbsp;█<br/>})</code>         |
+|   `baa→` | <code>beforeAll(async () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
+
+### Describe
+
+|  Trigger | Result                                                                |
+| -------: | --------------------------------------------------------------------- |
+|     `d→` | <code>describe('group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>       |
+|    `do→` | <code>describe.only('group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|    `ds→` | <code>describe.skip('group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+
+### Mock
+
+|  Trigger | Result        |
+| -------: | ------------- |
+|    `vf→` | `vi.fn(█)`    |
+|    `vs→` | `vi.spyOn(█)` |
+
+### It
+
+|  Trigger | Result                                                            |
+| -------: | ----------------------------------------------------------------- |
+|     `i→` | <code>it('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>        |
+|    `io→` | <code>it.only('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
+|    `is→` | <code>it.skip('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
+|    `it→` | `it.todo('should')█`                                              |
+|    `ia→` | <code>it('should', async () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+
+### Test
+
+|  Trigger | Result                                                             |
+| -------: | ------------------------------------------------------------------ |
+|     `t→` | <code>test('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>       |
+|    `to→` | <code>test.only('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|    `ts→` | <code>test.skip('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|    `tt→` | `test.todo('should')█`                                             |
+|    `ta→` | <code>test('should', async () => {<br/>&nbsp;&nbsp;█<br/>})</code> |
+
+### Expect
+
+|  Trigger | Result                     |
+| -------: | -------------------------- |
+|     `e→` | `expect(█)`                |
+|    `ea→` | `expect.assertions(█)`     |
+|   `eha→` | `expect.hasAssertions()█`  |
+|   `erj→` | `expect( ).rejects█`       |
+|   `ers→` | `expect( ).resolves`       |
+
+### Assertion
+
+|   Trigger | Result                                                                                      |
+| --------: | ------------------------------------------------------------------------------------------- |
+|     `tb→` | `expect( ).toBe( )█`                                                                        |
+|   `tbct→` | `expect( ).toBeCloseTo( )█`                                                                 |
+|    `tbd→` | `expect( ).toBeDefined( )█`                                                                 |
+|    `tbf→` | `expect( ).toBeFalsy( )█`                                                                   |
+|   `tbgt→` | `expect( ).toBeGreaterThan( )█`                                                             |
+|  `tbgte→` | `expect( ).toBeGreaterThanOrEqual( )█`                                                      |
+|    `tbi→` | `expect( ).toBeInstanceOf( )█`                                                              |
+|   `tblt→` | `expect( ).toBeLessThan( )█`                                                                |
+|  `tblte→` | `expect( ).toBeLessThanOrEqual( )█`                                                         |
+|    `tbn→` | `expect( ).toBeNull( )█`                                                                    |
+|    `tbt→` | `expect( ).toBeTruthy( )█`                                                                  |
+|    `tbu→` | `expect( ).toBeUndefined( )█`                                                               |
+|     `tc→` | `expect( ).toContain( )█`                                                                   |
+|    `tce→` | `expect( ).toContainEqual( )█`                                                              |
+|     `te→` | `expect( ).toEqual( )█`                                                                     |
+|   `thbc→` | `expect( ).toHaveBeenCalled( )█`                                                            |
+|  `thbct→` | `expect( ).toHaveBeenCalledTimes( )█`                                                       |
+|  `thbcw→` | `expect( ).toHaveBeenCalledWith( )█`                                                        |
+| `thblcw→` | `expect( ).toHaveBeenLastCalledWith( )█`                                                    |
+|    `thl→` | `expect( ).toHaveLength( )█`                                                                |
+|    `thp→` | `expect( ).toHaveProperty(keyPath, value)█`                                                 |
+|     `tm→` | `expect( ).toMatch( )█`                                                                     |
+|   `tmis→` | `expect( ).toMatchInlineSnapshot( )█`                                                       |
+|    `tmo→` | `expect( ).toMatchObject( )█`                                                               |
+|    `tse→` | `expect( ).toStrictEqual( )█`                                                               |
+|     `tt→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrow( )</code>                             |
+|    `tte→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowError( )</code>                        |
+| `ttemis→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingInlineSnapshot( )</code>  |
+|  `ttems→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingSnapshot( )</code>        |
+
+⇧ [Back to menu](#menu)
+
+---
+
+## Settings
+
+The `editor.snippetSuggestions` setting in vscode `settings.json` will show snippets on top of the suggestion list.
+
+```json
+"editor.snippetSuggestions": "top"
+```
 
 ⇧ [Back to menu](#menu)
 

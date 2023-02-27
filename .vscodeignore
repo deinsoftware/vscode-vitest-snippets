@@ -2,4 +2,3 @@
 .gitignore
 CHANGELOG.md
 test/**
-playground/**

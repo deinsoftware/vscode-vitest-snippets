@@ -5,4 +5,6 @@ node_modules
 *.vsix
 *.log
 .DS_Store
-.playground
+!test
+test/**
+!test/**.test.js
