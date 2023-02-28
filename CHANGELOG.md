@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 1.2.0 - 2023/02/28
+
+### Added
+
+- TypeScript, React and Vue compatibility
+
 ## 1.1.1 - 2023/02/27
 
 ### Fixed

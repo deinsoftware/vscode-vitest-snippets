@@ -60,6 +60,10 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 | Language         | Extension |
 | ---------------- | --------- |
 | JavaScript       | `.js`     |
+| TypeScript       | `.ts`     |
+| JavaScript React | `.jsx`    |
+| TypeScript React | `.tsx`    |
+| Vue              | `.vue`    |
 
 ⇧ [Back to menu](#menu)
 

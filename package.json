@@ -1,7 +1,7 @@
 {
   "name": "vitest-snippets",
   "description": "VS Code Vitest snippets for JS and TS",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "displayName": "Vitest Snippets",
   "publisher": "deinsoftware",
   "icon": "images/light-icon.png",
@@ -10,8 +10,12 @@
     "describe",
     "expect",
     "test",
+    "testing",
     "snippets",
-    "javascript"
+    "javascript",
+    "typescript",
+    "react",
+    "vue"
   ],
   "license": "MIT",
   "repository": {
@@ -68,6 +72,134 @@
       },
       {
         "language": "javascript",
+        "path": "./snippets/assertion.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/import.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/setup.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/describe.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/mock.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/it.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/test.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/expect.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/assertion.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/import.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/setup.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/describe.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/mock.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/it.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/test.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/expect.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/assertion.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/import.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/setup.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/describe.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/mock.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/it.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/test.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/expect.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/assertion.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/import.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/setup.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/describe.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/mock.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/it.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/test.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/expect.json"
+      },
+      {
+        "language": "typescriptreact",
         "path": "./snippets/assertion.json"
       }
     ]
