@@ -26,6 +26,7 @@ The quick and easy way to create and use Vitest with [VS Code](https://code.visu
   - [Test](#test)
   - [Expect](#expect)
   - [Assertion](#assertion)
+- [Keyboard](#keyboard)
 - [Settings](#settings)
 - [About](#about)
 
@@ -71,13 +72,16 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 
 ## Snippets
 
-Below is a list of all available snippets and the triggers of each one. The **→** means the `TAB` key and `█` the final cursor position.
+Below is a list of all available snippets and the triggers of each one. The `░` means the `TAB` jump position and `█` the final cursor position.
 
 ### Import
 
-|  Trigger | Result                                            |
-| -------: | ------------------------------------------------- |
-|    `iv→` | `import { it, expect, describe } from 'vitest'█`  |
+|  Trigger | Result                                                            |
+| -------: | ----------------------------------------------------------------- |
+|    `iv→` | `import { it, expect, describe } from 'vitest'█`                  |
+|   `itl→` | `import { render, screen } from '@testing-library/$<react|vue>█`  |
+|   `itr→` | `import { render, screen } from '@testing-library/react█`         |
+|   `itv→` | `import { render, screen } from '@testing-library/vue█`           |
 
 ### Setup
 
@@ -92,46 +96,46 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ### Describe
 
-|  Trigger | Result                                                                |
-| -------: | --------------------------------------------------------------------- |
-|     `d→` | <code>describe('group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>       |
-|    `do→` | <code>describe.only('group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
-|    `ds→` | <code>describe.skip('group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|  Trigger | Result                                                                 |
+| -------: | ---------------------------------------------------------------------- |
+|     `d→` | <code>describe('░group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>       |
+|    `do→` | <code>describe.only('░group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|    `ds→` | <code>describe.skip('░group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
 
 ### Mock
 
-|  Trigger | Result                                                                      |
-| -------: | --------------------------------------------------------------------------- |
-|    `vf→` | `vi.fn()█`                                                                  |
-|  `vfrv→` | `vi.fn().mockResolvedValue(█)`                                              |
-|    `cf→` | `const nameMock = vi.fn()█`                                                 |
-|  `cfrv→` | `const nameMock = vi.fn().mockResolvedValue(█)`                             |
-|   `mrv→` | `mock.mockReturnValue(█)`                                                   |
-|  `mrvo→` | `mock.mockReturnValueOnce(█)`                                               |
-|    `vs→` | `vi.spyOn(global, 'method')█`                                               |
-|   `vsi→` | `vi.spyOn(global, 'method').mockImplementation(() => █)`                    |
-|    `cs→` | `const methodSpy = vi.spyOn(global, 'method')█`                             |
-|   `csi→` | `const methodSpy = vi.spyOn(global, 'method').mockImplementation(() => █)`  |
+|  Trigger | Result                                                                         |
+| -------: | ------------------------------------------------------------------------------ |
+|    `vf→` | `vi.fn()█`                                                                     |
+|  `vfrv→` | `vi.fn().mockResolvedValue(█)`                                                 |
+|    `cf→` | `const ░nameMock = vi.fn()█`                                                   |
+|  `cfrv→` | `const ░nameMock = vi.fn().mockResolvedValue(█)`                               |
+|   `mrv→` | `░mock.mockReturnValue(█)`                                                     |
+|  `mrvo→` | `░mock.mockReturnValueOnce(█)`                                                 |
+|    `vs→` | `vi.spyOn(░global, '░method')█`                                                |
+|   `vsi→` | `vi.spyOn(░global, '░method').mockImplementation(() => █)`                     |
+|    `cs→` | `const ░methodSpy = vi.spyOn(░global, '░method')█`                             |
+|   `csi→` | `const ░methodSpy = vi.spyOn(░global, '░method').mockImplementation(() => █)`  |
 
 ### It
 
-|  Trigger | Result                                                            |
-| -------: | ----------------------------------------------------------------- |
-|     `i→` | <code>it('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>        |
-|    `io→` | <code>it.only('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
-|    `is→` | <code>it.skip('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
-|    `it→` | `it.todo('should')█`                                              |
-|    `ia→` | <code>it('should', async () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|  Trigger | Result                                                             |
+| -------: | ------------------------------------------------------------------ |
+|     `i→` | <code>it('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>        |
+|    `io→` | <code>it.only('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
+|    `is→` | <code>it.skip('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
+|    `it→` | `it.todo('░should')█`                                              |
+|    `ia→` | <code>it('░should', async () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
 
 ### Test
 
-|  Trigger | Result                                                             |
-| -------: | ------------------------------------------------------------------ |
-|     `t→` | <code>test('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>       |
-|    `to→` | <code>test.only('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
-|    `ts→` | <code>test.skip('should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
-|    `tt→` | `test.todo('should')█`                                             |
-|    `ta→` | <code>test('should', async () => {<br/>&nbsp;&nbsp;█<br/>})</code> |
+|  Trigger | Result                                                              |
+| -------: | ------------------------------------------------------------------- |
+|     `t→` | <code>test('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>       |
+|    `to→` | <code>test.only('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|    `ts→` | <code>test.skip('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|    `tt→` | `test.todo('░should')█`                                             |
+|    `ta→` | <code>test('░should', async () => {<br/>&nbsp;&nbsp;█<br/>})</code> |
 
 ### Expect
 
@@ -140,44 +144,55 @@ Below is a list of all available snippets and the triggers of each one. The **�
 |     `e→` | `expect(█)`                |
 |    `ea→` | `expect.assertions(█)`     |
 |   `eha→` | `expect.hasAssertions()█`  |
-|   `erj→` | `expect( ).rejects█`       |
-|   `ers→` | `expect( ).resolves`       |
+|   `erj→` | `expect(░).rejects█`       |
+|   `ers→` | `expect(░).resolves█`       |
 
 ### Assertion
 
 |   Trigger | Result                                                                                      |
 | --------: | ------------------------------------------------------------------------------------------- |
-|     `tb→` | `expect( ).toBe( )█`                                                                        |
-|   `tbct→` | `expect( ).toBeCloseTo( )█`                                                                 |
-|    `tbd→` | `expect( ).toBeDefined( )█`                                                                 |
-|    `tbf→` | `expect( ).toBeFalsy( )█`                                                                   |
-|   `tbgt→` | `expect( ).toBeGreaterThan( )█`                                                             |
-|  `tbgte→` | `expect( ).toBeGreaterThanOrEqual( )█`                                                      |
-|    `tbi→` | `expect( ).toBeInstanceOf( )█`                                                              |
-|   `tblt→` | `expect( ).toBeLessThan( )█`                                                                |
-|  `tblte→` | `expect( ).toBeLessThanOrEqual( )█`                                                         |
-|    `tbn→` | `expect( ).toBeNull( )█`                                                                    |
-|    `tbt→` | `expect( ).toBeTruthy( )█`                                                                  |
-|    `tbu→` | `expect( ).toBeUndefined( )█`                                                               |
-|     `tc→` | `expect( ).toContain( )█`                                                                   |
-|    `tce→` | `expect( ).toContainEqual( )█`                                                              |
-|     `te→` | `expect( ).toEqual( )█`                                                                     |
-|   `thbc→` | `expect( ).toHaveBeenCalled( )█`                                                            |
-|  `thbct→` | `expect( ).toHaveBeenCalledTimes( )█`                                                       |
-|  `thbcw→` | `expect( ).toHaveBeenCalledWith( )█`                                                        |
-| `thblcw→` | `expect( ).toHaveBeenLastCalledWith( )█`                                                    |
-|    `thl→` | `expect( ).toHaveLength( )█`                                                                |
-|    `thp→` | `expect( ).toHaveProperty(keyPath, value)█`                                                 |
-|     `tm→` | `expect( ).toMatch( )█`                                                                     |
-|   `tmis→` | `expect( ).toMatchInlineSnapshot( )█`                                                       |
-|    `tmo→` | `expect( ).toMatchObject( )█`                                                               |
-|    `tse→` | `expect( ).toStrictEqual( )█`                                                               |
-|     `tt→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrow( )</code>                             |
-|    `tte→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowError( )</code>                        |
-| `ttemis→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingInlineSnapshot( )</code>  |
-|  `ttems→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingSnapshot( )</code>        |
+|     `tb→` | `expect(░).toBe(░)█`                                                                        |
+|   `tbct→` | `expect(░).toBeCloseTo(░number, ░delta)█`                                                   |
+|    `tbd→` | `expect(░).toBeDefined()█`                                                                 |
+|    `tbf→` | `expect(░).toBeFalsy()█`                                                                   |
+|   `tbgt→` | `expect(░).toBeGreaterThan(░)█`                                                             |
+|  `tbgte→` | `expect(░).toBeGreaterThanOrEqual(░)█`                                                      |
+|    `tbi→` | `expect(░).toBeInstanceOf(░)█`                                                              |
+|   `tblt→` | `expect(░).toBeLessThan(░)█`                                                                |
+|  `tblte→` | `expect(░).toBeLessThanOrEqual(░)█`                                                         |
+|    `tbn→` | `expect(░).toBeNull()█`                                                                    |
+|    `tbt→` | `expect(░).toBeTruthy()█`                                                                  |
+|    `tbu→` | `expect(░).toBeUndefined()█`                                                               |
+|     `tc→` | `expect(░list).toContain(░)█`                                                               |
+|    `tce→` | `expect(░list).toContainEqual(░)█`                                                          |
+|     `te→` | `expect(░).toEqual(░)█`                                                                     |
+|   `thbc→` | `expect(░).toHaveBeenCalled()█`                                                            |
+|  `thbct→` | `expect(░).toHaveBeenCalledTimes(░)█`                                                       |
+|  `thbcw→` | `expect(░).toHaveBeenCalledWith(░)█`                                                        |
+| `thblcw→` | `expect(░).toHaveBeenLastCalledWith(░)█`                                                    |
+|    `thl→` | `expect(░).toHaveLength(░)█`                                                                |
+|    `thp→` | `expect(░).toHaveProperty(░keyPath, ░value)█`                                               |
+|     `tm→` | `expect(░).toMatch(░)█`                                                                     |
+|   `tmis→` | `expect(░).toMatchInlineSnapshot(░)█`                                                       |
+|    `tmo→` | `expect(░).toMatchObject(░)█`                                                               |
+|    `tse→` | `expect(░).toStrictEqual(░)█`                                                               |
+|     `tt→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrow(░)</code>                             |
+|    `tte→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowError(░)</code>                        |
+| `ttemis→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingInlineSnapshot()</code>  |
+|  `ttems→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingSnapshot()</code>        |
 
 ⇧ [Back to menu](#menu)
+
+---
+
+## Keyboard
+
+Remember to complement the snippets with these keyboard shortcuts that can be used without needing to move the cursor to the start or to the end.
+
+| Action            | Win/Linux          | macOS             |
+| ----------------- | -----------------: | ----------------: |
+| Insert line above | `ctrl+shift+enter` | `cmd+shift+enter` |
+| Insert line below | `ctrl+enter`       | `cmd+enter`       |
 
 ---
 
@@ -203,6 +218,7 @@ The `editor.snippetSuggestions` setting in vscode `settings.json` will show snip
 
 - [VS Code](https://code.visualstudio.com/) - Code editing redefined.
 - [Figma](https://www.figma.com/) - The collaborative interface design tool.
+- [SWPM](https://www.npmjs.com/package/swpm) - One Package Manager to command them all.
 
 ### Contributing
 

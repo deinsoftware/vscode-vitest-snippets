@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 1.3.0 - 2023/03/31
+
+### Added
+
+- Testing Library imports
+
 ## 1.2.0 - 2023/02/28
 
 ### Added
