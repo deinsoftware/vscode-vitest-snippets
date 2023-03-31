@@ -75,9 +75,12 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ### Import
 
-|  Trigger | Result                                            |
-| -------: | ------------------------------------------------- |
-|    `iv→` | `import { it, expect, describe } from 'vitest'█`  |
+|  Trigger | Result                                                            |
+| -------: | ----------------------------------------------------------------- |
+|    `iv→` | `import { it, expect, describe } from 'vitest'█`                  |
+|   `itl→` | `import { render, screen } from '@testing-library/$<react|vue>█`  |
+|   `itr→` | `import { render, screen } from '@testing-library/react█`  |
+|   `itv→` | `import { render, screen } from '@testing-library/vue█`  |
 
 ### Setup
 
@@ -100,18 +103,18 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ### Mock
 
-|  Trigger | Result                                                                      |
-| -------: | --------------------------------------------------------------------------- |
-|    `vf→` | `vi.fn()█`                                                                  |
-|  `vfrv→` | `vi.fn().mockResolvedValue(█)`                                              |
-|    `cf→` | `const nameMock = vi.fn()█`                                                 |
-|  `cfrv→` | `const nameMock = vi.fn().mockResolvedValue(█)`                             |
-|   `mrv→` | `mock.mockReturnValue(█)`                                                   |
-|  `mrvo→` | `mock.mockReturnValueOnce(█)`                                               |
-|    `vs→` | `vi.spyOn(global, 'method')█`                                               |
-|   `vsi→` | `vi.spyOn(global, 'method').mockImplementation(() => █)`                    |
-|    `cs→` | `const methodSpy = vi.spyOn(global, 'method')█`                             |
-|   `csi→` | `const methodSpy = vi.spyOn(global, 'method').mockImplementation(() => █)`  |
+|  Trigger | Result                                                                         |
+| -------: | ------------------------------------------------------------------------------ |
+|    `vf→` | `vi.fn()█`                                                                     |
+|  `vfrv→` | `vi.fn().mockResolvedValue(█)`                                                 |
+|    `cf→` | `const $nameMock = vi.fn()█`                                                   |
+|  `cfrv→` | `const $nameMock = vi.fn().mockResolvedValue(█)`                               |
+|   `mrv→` | `$mock.mockReturnValue(█)`                                                     |
+|  `mrvo→` | `$mock.mockReturnValueOnce(█)`                                                 |
+|    `vs→` | `vi.spyOn($global, '$method')█`                                                |
+|   `vsi→` | `vi.spyOn($global, '$method').mockImplementation(() => █)`                     |
+|    `cs→` | `const $methodSpy = vi.spyOn($global, '$method')█`                             |
+|   `csi→` | `const $methodSpy = vi.spyOn($global, '$method').mockImplementation(() => █)`  |
 
 ### It
 
@@ -148,7 +151,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 |   Trigger | Result                                                                                      |
 | --------: | ------------------------------------------------------------------------------------------- |
 |     `tb→` | `expect( ).toBe( )█`                                                                        |
-|   `tbct→` | `expect( ).toBeCloseTo( )█`                                                                 |
+|   `tbct→` | `expect( ).toBeCloseTo($number, $delta)█`                                                   |
 |    `tbd→` | `expect( ).toBeDefined( )█`                                                                 |
 |    `tbf→` | `expect( ).toBeFalsy( )█`                                                                   |
 |   `tbgt→` | `expect( ).toBeGreaterThan( )█`                                                             |
@@ -159,15 +162,15 @@ Below is a list of all available snippets and the triggers of each one. The **�
 |    `tbn→` | `expect( ).toBeNull( )█`                                                                    |
 |    `tbt→` | `expect( ).toBeTruthy( )█`                                                                  |
 |    `tbu→` | `expect( ).toBeUndefined( )█`                                                               |
-|     `tc→` | `expect( ).toContain( )█`                                                                   |
-|    `tce→` | `expect( ).toContainEqual( )█`                                                              |
+|     `tc→` | `expect($list).toContain( )█`                                                               |
+|    `tce→` | `expect($list).toContainEqual( )█`                                                          |
 |     `te→` | `expect( ).toEqual( )█`                                                                     |
 |   `thbc→` | `expect( ).toHaveBeenCalled( )█`                                                            |
 |  `thbct→` | `expect( ).toHaveBeenCalledTimes( )█`                                                       |
 |  `thbcw→` | `expect( ).toHaveBeenCalledWith( )█`                                                        |
 | `thblcw→` | `expect( ).toHaveBeenLastCalledWith( )█`                                                    |
 |    `thl→` | `expect( ).toHaveLength( )█`                                                                |
-|    `thp→` | `expect( ).toHaveProperty(keyPath, value)█`                                                 |
+|    `thp→` | `expect( ).toHaveProperty($keyPath, $value)█`                                               |
 |     `tm→` | `expect( ).toMatch( )█`                                                                     |
 |   `tmis→` | `expect( ).toMatchInlineSnapshot( )█`                                                       |
 |    `tmo→` | `expect( ).toMatchObject( )█`                                                               |
