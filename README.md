@@ -153,20 +153,21 @@ Below is a list of all available snippets and the triggers of each one. The `░
 | --------: | ------------------------------------------------------------------------------------------- |
 |     `tb→` | `expect(░).toBe(░)█`                                                                        |
 |   `tbct→` | `expect(░).toBeCloseTo(░number, ░delta)█`                                                   |
-|    `tbd→` | `expect(░).toBeDefined()█`                                                                 |
-|    `tbf→` | `expect(░).toBeFalsy()█`                                                                   |
+|    `tbd→` | `expect(░).toBeDefined()█`                                                                  |
+|    `tbf→` | `expect(░).toBeFalsy()█`                                                                    |
 |   `tbgt→` | `expect(░).toBeGreaterThan(░)█`                                                             |
 |  `tbgte→` | `expect(░).toBeGreaterThanOrEqual(░)█`                                                      |
+|   `tbid→` | `expect(░).toBeInTheDocument()█`                                                            |
 |    `tbi→` | `expect(░).toBeInstanceOf(░)█`                                                              |
 |   `tblt→` | `expect(░).toBeLessThan(░)█`                                                                |
 |  `tblte→` | `expect(░).toBeLessThanOrEqual(░)█`                                                         |
-|    `tbn→` | `expect(░).toBeNull()█`                                                                    |
-|    `tbt→` | `expect(░).toBeTruthy()█`                                                                  |
-|    `tbu→` | `expect(░).toBeUndefined()█`                                                               |
+|    `tbn→` | `expect(░).toBeNull()█`                                                                     |
+|    `tbt→` | `expect(░).toBeTruthy()█`                                                                   |
+|    `tbu→` | `expect(░).toBeUndefined()█`                                                                |
 |     `tc→` | `expect(░list).toContain(░)█`                                                               |
 |    `tce→` | `expect(░list).toContainEqual(░)█`                                                          |
 |     `te→` | `expect(░).toEqual(░)█`                                                                     |
-|   `thbc→` | `expect(░).toHaveBeenCalled()█`                                                            |
+|   `thbc→` | `expect(░).toHaveBeenCalled()█`                                                             |
 |  `thbct→` | `expect(░).toHaveBeenCalledTimes(░)█`                                                       |
 |  `thbcw→` | `expect(░).toHaveBeenCalledWith(░)█`                                                        |
 | `thblcw→` | `expect(░).toHaveBeenLastCalledWith(░)█`                                                    |
@@ -178,8 +179,8 @@ Below is a list of all available snippets and the triggers of each one. The `░
 |    `tse→` | `expect(░).toStrictEqual(░)█`                                                               |
 |     `tt→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrow(░)</code>                             |
 |    `tte→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowError(░)</code>                        |
-| `ttemis→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingInlineSnapshot()</code>  |
-|  `ttems→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingSnapshot()</code>        |
+| `ttemis→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingInlineSnapshot()</code>   |
+|  `ttems→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingSnapshot()</code>         |
 
 ⇧ [Back to menu](#menu)
 
