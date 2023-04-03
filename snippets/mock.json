@@ -11,42 +11,42 @@
   },
   "const.fn": {
     "prefix": "cf",
-    "body": "const {$1:name}Mock = vi.fn()$0",
+    "body": "const ${1:name}Mock = vi.fn()$0",
     "description": "creates a mock variable for a vi.fn()"
   },
   "const.fn.mockResolvedValue": {
     "prefix": "cfrv",
-    "body": "const {$1:name}Mock = vi.fn().mockResolvedValue($0)",
+    "body": "const ${1:name}Mock = vi.fn().mockResolvedValue($0)",
     "description": "creates a mock variable for a vi.fn() with resolved value"
   },
   "mock.mockReturnValue": {
     "prefix": "mrv",
-    "body": "{$1:mock}.mockReturnValue($0)",
+    "body": "${1:mock}.mockReturnValue($0)",
     "description": "assign a return value"
   },
   "mock.mockReturnValueOnce": {
     "prefix": "mrvo",
-    "body": "{$1:mock}.mockReturnValueOnce($0)",
+    "body": "${1:mock}.mockReturnValueOnce($0)",
     "description": "assign a return value for only one call"
   },
   "vi.spyOn": {
     "prefix": "vs",
-    "body": "vi.spyOn({$1:global}, '{$2:method}'))$0",
+    "body": "vi.spyOn(${1:global}, '${2:method}'))$0",
     "description": "creates vi.spyOn()"
   },
   "vi.spyOn.mockImplementation": {
     "prefix": "vsi",
-    "body": "vi.spyOn({$1:global}, '{$2:method}')).mockImplementation(() => $0)",
+    "body": "vi.spyOn(${1:global}, '${2:method}')).mockImplementation(() => $0)",
     "description": "creates vi.spyOn() with mock implementation"
   },
   "const.spyOn": {
     "prefix": "cs",
-    "body": "const {$2:method}Spy = vi.spyOn({$1:global}, '{$2:method}'))$0",
+    "body": "const ${2:method}Spy = vi.spyOn(${1:global}, '${2:method}'))$0",
     "description": "creates a spy variable for a vi.spyOn()"
   },
   "const.spyOn.mockImplementation": {
     "prefix": "csi",
-    "body": "const {$2:method}Spy = vi.spyOn({$1:global}, '{$2:method}')).mockImplementation(() => $0)",
+    "body": "const ${2:method}Spy = vi.spyOn(${1:global}, '${2:method}')).mockImplementation(() => $0)",
     "description": "creates a spy variable for a vi.spyOn() with mock implementation"
   }
 }

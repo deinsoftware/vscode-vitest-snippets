@@ -79,7 +79,7 @@ Below is a list of all available snippets and the triggers of each one. The `░
 |  Trigger | Result                                                            |
 | -------: | ----------------------------------------------------------------- |
 |    `iv→` | `import { it, expect, describe } from 'vitest'█`                  |
-|   `itl→` | `import { render, screen } from '@testing-library/$<react|vue>█`  |
+|   `itl→` | `import { render, screen } from '@testing-library/░<react\|vue>█`  |
 |   `itr→` | `import { render, screen } from '@testing-library/react█`         |
 |   `itv→` | `import { render, screen } from '@testing-library/vue█`           |
 

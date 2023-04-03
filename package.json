@@ -1,7 +1,7 @@
 {
   "name": "vitest-snippets",
   "description": "VS Code Vitest snippets for JS and TS",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "displayName": "Vitest Snippets",
   "publisher": "deinsoftware",
   "icon": "images/light-icon.png",

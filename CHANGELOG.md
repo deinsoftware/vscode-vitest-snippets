@@ -9,6 +9,13 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 1.4.1 - 2023/04/03
+
+### Fixed
+
+- mock name snippets
+- import documentation
+
 ## 1.4.0 - 2023/03/31
 
 ### Added
