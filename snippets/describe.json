@@ -1,6 +1,6 @@
 {
   "describe": {
-    "prefix": "d",
+    "prefix": ["d", "desc"],
     "body": "describe('${1:group}', () => {\n\t$0\n})",
     "description": "creates a describe block"
   },

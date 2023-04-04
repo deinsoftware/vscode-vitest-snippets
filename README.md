@@ -79,9 +79,6 @@ Below is a list of all available snippets and the triggers of each one. The `░
 |  Trigger | Result                                                            |
 | -------: | ----------------------------------------------------------------- |
 |    `iv→` | `import { it, expect, describe } from 'vitest'█`                  |
-|   `itl→` | `import { render, screen } from '@testing-library/░<react\|vue>█`  |
-|   `itr→` | `import { render, screen } from '@testing-library/react█`         |
-|   `itv→` | `import { render, screen } from '@testing-library/vue█`           |
 
 ### Setup
 
@@ -99,6 +96,7 @@ Below is a list of all available snippets and the triggers of each one. The `░
 |  Trigger | Result                                                                 |
 | -------: | ---------------------------------------------------------------------- |
 |     `d→` | <code>describe('░group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>       |
+|  `desc→` | <code>describe('░group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>       |
 |    `do→` | <code>describe.only('░group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
 |    `ds→` | <code>describe.skip('░group', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
 
@@ -122,9 +120,10 @@ Below is a list of all available snippets and the triggers of each one. The `░
 |  Trigger | Result                                                             |
 | -------: | ------------------------------------------------------------------ |
 |     `i→` | <code>it('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>        |
+|    `it→` | <code>it('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>        |
 |    `io→` | <code>it.only('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
 |    `is→` | <code>it.skip('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
-|    `it→` | `it.todo('░should')█`                                              |
+|   `itd→` | `it.todo('░should')█`                                              |
 |    `ia→` | <code>it('░should', async () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
 
 ### Test
@@ -134,7 +133,7 @@ Below is a list of all available snippets and the triggers of each one. The `░
 |     `t→` | <code>test('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>       |
 |    `to→` | <code>test.only('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
 |    `ts→` | <code>test.skip('░should', () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
-|    `tt→` | `test.todo('░should')█`                                             |
+|   `ttd→` | `test.todo('░should')█`                                             |
 |    `ta→` | <code>test('░should', async () => {<br/>&nbsp;&nbsp;█<br/>})</code> |
 
 ### Expect

@@ -1,6 +1,6 @@
 {
   "it": {
-    "prefix": "i",
+    "prefix": ["i", "it"],
     "body": "it('${1:should}', () => {\n\t$0\n})",
     "description": "creates an it block"
   },
