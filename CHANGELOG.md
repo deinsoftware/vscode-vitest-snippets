@@ -9,6 +9,16 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 1.5.0 - 2023/04/03
+
+### Added
+
+- Alias for `it` and `desc`
+
+### Removed
+
+- removed all the Testing Library snippets to a new extension (WIP)
+
 ## 1.4.1 - 2023/04/03
 
 ### Fixed
