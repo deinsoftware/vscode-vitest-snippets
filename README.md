@@ -6,9 +6,11 @@
 [![license](https://img.shields.io/github/license/deinsoftware/vscode-vitest-snippets)](LICENSE.md)
 [![Open in VS Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/deinsoftware/vscode-vitest-snippets)
 
-![Vitest](https://raw.githubusercontent.com/deinsoftware/vscode-vitest-snippet/main/.github/social/preview.png)
+![Vitest](https://raw.githubusercontent.com/deinsoftware/vscode-vitest-snippets/main/.github/social/preview.png)
 
 The quick and easy way to create and use Vitest with [VS Code](https://code.visualstudio.com/).
+
+> We also **recommend** installing his complement extension [Testing Library Snippets](https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets)
 
 ## Menu
 
