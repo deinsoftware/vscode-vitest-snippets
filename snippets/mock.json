@@ -1,4 +1,24 @@
 {
+  "vi.afterEach.mockClearReset": {
+    "prefix": "aevcr",
+    "body": [
+      "afterEach(() => {",
+      "\tvi.clearAllMocks()",
+      "\tvi.resetAllMocks()",
+      "})$0"
+    ],
+    "description": "afterEach mock clear and reset functions called once after each spec"
+  },
+  "vi.mock": {
+    "prefix": "vm",
+    "body": "vi.mock('${1:path}')$0",
+    "description": "creates vi.mock()"
+  },
+  "vi.mock.mockResolvedValue": {
+    "prefix": "vmrv",
+    "body": "vi.mock('${1:path}').mockResolvedValue($0)",
+    "description": "creates vi.mock() with resolved value"
+  },
   "vi.fn": {
     "prefix": "vf",
     "body": "vi.fn()$0",
