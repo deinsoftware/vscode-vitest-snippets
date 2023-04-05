@@ -9,6 +9,15 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 1.6.0 - 2023/04/04
+
+### Added
+
+- expect any TypeScript
+- afterEach mock clear and reset
+- extra imports for vitest
+- vi.mock
+
 ## 1.5.1 - 2023/04/04
 
 ### Fixed

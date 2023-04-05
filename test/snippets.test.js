@@ -8,6 +8,7 @@ const itSnippets = require("../snippets/it.json")
 const testSnippets = require("../snippets/test.json")
 const expectSnippets = require("../snippets/expect.json")
 const assertionSnippets = require("../snippets/assertion.json")
+const typeSnippets = require("../snippets/type.json")
 
 const snippets = {
   ...importSnippets,
@@ -18,6 +19,7 @@ const snippets = {
   ...testSnippets,
   ...expectSnippets,
   ...assertionSnippets,
+  ...typeSnippets,
 }
 
 const unique = (xs) => [...new Set(xs)]

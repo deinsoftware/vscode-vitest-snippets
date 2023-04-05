@@ -27,6 +27,7 @@ The quick and easy way to create and use Vitest with [VS Code](https://code.visu
   - [It](#it)
   - [Test](#test)
   - [Expect](#expect)
+  - [Any](#any)
   - [Assertion](#assertion)
 - [Keyboard](#keyboard)
 - [Settings](#settings)
@@ -78,20 +79,21 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 ### Import
 
-|  Trigger | Result                                                            |
-| -------: | ----------------------------------------------------------------- |
-|    `iv→` | `import { it, expect, describe } from 'vitest'█`                  |
+|  Trigger | Result                                                                       |
+| -------: | ---------------------------------------------------------------------------- |
+|    `iv→` | `import { it, expect, describe } from 'vitest'█`                             |
+|   `ive→` | `import { beforeEach, afterEach, it, expect, describe, vi } from 'vitest'█`  |
 
 ### Setup
 
 |  Trigger | Result                                                          |
 | -------: | --------------------------------------------------------------- |
-|    `ae→` | <code>afterEach(() => {<br/>&nbsp;&nbsp;█<br/>})</code>         |
-|    `aa→` | <code>afterAll(() => {<br/>&nbsp;&nbsp;█<br/>})</code>          |
-|    `be→` | <code>beforeEach(() => {<br/>&nbsp;&nbsp;█<br/>})</code>        |
-|   `bea→` | <code>beforeEach(async () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
 |    `ba→` | <code>beforeAll(() => {<br/>&nbsp;&nbsp;█<br/>})</code>         |
 |   `baa→` | <code>beforeAll(async () => {<br/>&nbsp;&nbsp;█<br/>})</code>   |
+|    `be→` | <code>beforeEach(() => {<br/>&nbsp;&nbsp;█<br/>})</code>        |
+|   `bea→` | <code>beforeEach(async () => {<br/>&nbsp;&nbsp;█<br/>})</code>  |
+|    `ae→` | <code>afterEach(() => {<br/>&nbsp;&nbsp;█<br/>})</code>         |
+|    `aa→` | <code>afterAll(() => {<br/>&nbsp;&nbsp;█<br/>})</code>          |
 
 ### Describe
 
@@ -104,18 +106,21 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 ### Mock
 
-|  Trigger | Result                                                                         |
-| -------: | ------------------------------------------------------------------------------ |
-|    `vf→` | `vi.fn()█`                                                                     |
-|  `vfrv→` | `vi.fn().mockResolvedValue(█)`                                                 |
-|    `cf→` | `const ░nameMock = vi.fn()█`                                                   |
-|  `cfrv→` | `const ░nameMock = vi.fn().mockResolvedValue(█)`                               |
-|   `mrv→` | `░mock.mockReturnValue(█)`                                                     |
-|  `mrvo→` | `░mock.mockReturnValueOnce(█)`                                                 |
-|    `vs→` | `vi.spyOn(░global, '░method')█`                                                |
-|   `vsi→` | `vi.spyOn(░global, '░method').mockImplementation(() => █)`                     |
-|    `cs→` | `const ░methodSpy = vi.spyOn(░global, '░method')█`                             |
-|   `csi→` | `const ░methodSpy = vi.spyOn(░global, '░method').mockImplementation(() => █)`  |
+|  Trigger | Result                                                                                                        |
+| -------: | ------------------------------------------------------------------------------------------------------------- |
+| `aevcr→` | <code>afterEach(() => {<br/>&nbsp;&nbsp;vi.clearAllMocks()<br/>&nbsp;&nbsp;vi.resetAllMocks()<br/>})█</code>  |
+|    `vm→` | `vi.mock('░path')█`                                                                                                    |
+|  `vmrv→` | `vi.mock('░path').mockResolvedValue(█)`                                                                                |
+|    `vf→` | `vi.fn()█`                                                                                                    |
+|  `vfrv→` | `vi.fn().mockResolvedValue(█)`                                                                                |
+|    `cf→` | `const ░nameMock = vi.fn()█`                                                                                  |
+|  `cfrv→` | `const ░nameMock = vi.fn().mockResolvedValue(█)`                                                              |
+|   `mrv→` | `░mock.mockReturnValue(█)`                                                                                    |
+|  `mrvo→` | `░mock.mockReturnValueOnce(█)`                                                                                |
+|    `vs→` | `vi.spyOn(░global, '░method')█`                                                                               |
+|   `vsi→` | `vi.spyOn(░global, '░method').mockImplementation(() => █)`                                                    |
+|    `cs→` | `const ░methodSpy = vi.spyOn(░global, '░method')█`                                                            |
+|   `csi→` | `const ░methodSpy = vi.spyOn(░global, '░method').mockImplementation(() => █)`                                 |
 
 ### It
 
@@ -146,7 +151,20 @@ Below is a list of all available snippets and the triggers of each one. The `░
 |    `ea→` | `expect.assertions(█)`     |
 |   `eha→` | `expect.hasAssertions()█`  |
 |   `erj→` | `expect(░).rejects█`       |
-|   `ers→` | `expect(░).resolves█`       |
+|   `ers→` | `expect(░).resolves█`      |
+
+### Any
+
+|  Trigger | Result                   |
+| -------: | ------------------------ |
+|   `eav→` | `expect.any(░)█`         |
+|   `eas→` | `expect.any(String)█`    |
+|   `ean→` | `expect.any(Number)█`    |
+|   `eab→` | `expect.any(Boolean)█`   |
+|   `ead→` | `expect.any(Date)█`      |
+|   `eaf→` | `expect.any(Function)█`  |
+|   `eaa→` | `expect.any(Array)█`     |
+|   `eat→` | `expect.anything()█`     |
 
 ### Assertion
 
