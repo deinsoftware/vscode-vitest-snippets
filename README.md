@@ -192,6 +192,8 @@ Below is a list of all available snippets and the triggers of each one. The `░
 | `thblcw→` | `expect(░).toHaveBeenLastCalledWith(░)█`                                                    |
 |    `thl→` | `expect(░).toHaveLength(░)█`                                                                |
 |    `thp→` | `expect(░).toHaveProperty(░keyPath, ░value)█`                                               |
+|   `thpd→` | `expect(░).toHaveProperty('disabled')█`                                                     |
+|   `thps→` | `expect(░).toHaveProperty('selected')█`                                                     |
 |     `tm→` | `expect(░).toMatch(░)█`                                                                     |
 |   `tmis→` | `expect(░).toMatchInlineSnapshot(░)█`                                                       |
 |    `tmo→` | `expect(░).toMatchObject(░)█`                                                               |
