@@ -109,6 +109,16 @@
     "body": "expect($1).toHaveProperty(${2:keyPath}, ${3:value})$0",
     "description": "returns true if the argument matches the second object"
   },
+  "toHavePropertyDisabled": {
+    "prefix": "thpd",
+    "body": "expect($1).toHaveProperty('disabled')$0",
+    "description": "returns true if the property disabled"
+  },
+  "toHavePropertySelected": {
+    "prefix": "thps",
+    "body": "expect($1).toHaveProperty('disabled')$0",
+    "description": "returns true if the property selected"
+  },
   "toMatch": {
     "prefix": "tm",
     "body": "expect($1).toMatch($2)$0",

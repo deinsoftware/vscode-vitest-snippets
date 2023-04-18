@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 1.7.0 - 2023/04/18
+
+### Added
+
+- `thpd` and `thps` snippets
+
 ## 1.6.1 - 2023/04/15
 
 ### Fixed
