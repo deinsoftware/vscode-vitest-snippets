@@ -76,7 +76,7 @@
       },
       {
         "language": "javascript",
-        "path": "./templates/collection.json"
+        "path": "./templates/skeleton.json"
       },
       {
         "language": "javascriptreact",
@@ -112,7 +112,7 @@
       },
       {
         "language": "javascriptreact",
-        "path": "./templates/collection.json"
+        "path": "./templates/skeleton.json"
       },
       {
         "language": "vue",
@@ -148,7 +148,7 @@
       },
       {
         "language": "vue",
-        "path": "./templates/collection.json"
+        "path": "./templates/skeleton.json"
       },
       {
         "language": "typescript",
@@ -184,7 +184,7 @@
       },
       {
         "language": "typescript",
-        "path": "./templates/collection.json"
+        "path": "./templates/skeleton.json"
       },
       {
         "language": "typescriptreact",
@@ -220,7 +220,7 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./templates/collection.json"
+        "path": "./templates/skeleton.json"
       }
     ]
   },

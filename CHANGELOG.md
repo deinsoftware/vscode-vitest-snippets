@@ -13,7 +13,7 @@ Security    to invite users to upgrade in case of vulnerabilities.
 
 ## Added
 
-- Template collections
+- Skeleton templates
 - `nvm` default version support
 
 ## Changed

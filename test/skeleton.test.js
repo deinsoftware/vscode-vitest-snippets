@@ -1,14 +1,14 @@
 import { it, expect, describe } from 'vitest'
 
-const importCollections = require("../templates/collection.json")
+const importSkeleton = require("../templates/skeleton.json")
 
 const snippets = {
-  ...importCollections,
+  ...importSkeleton,
 }
 
 const unique = (xs) => [...new Set(xs)]
 
-describe("collections.json", () => {
+describe("skeleton.json", () => {
   it("has entries", () => {
     expect(Object.keys(snippets).length).toBeGreaterThan(0)
   })
