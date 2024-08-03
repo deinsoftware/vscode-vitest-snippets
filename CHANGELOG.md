@@ -9,6 +9,17 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 1.8.0 - 2024/08/03
+
+## Added
+
+- Template collections
+- `nvm` default version support
+
+## Changed
+
+- Bump `vitest` version
+
 ## 1.7.0 - 2023/04/18
 
 ### Added

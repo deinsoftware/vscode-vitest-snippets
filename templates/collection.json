@@ -1,0 +1,7 @@
+{
+  "collection.basic": {
+    "prefix": "vcb",
+    "body": "import { it, expect, describe } from 'vitest'\n\ndescribe('${1:group}', () => {\n\tit('${2:should}', () => {\n\t\tconst expected = '${3:expected}'\n\t\tconst actual = ${1:group}(${4:argument})\n\t\texpect(actual).toBe(expected)$0\n\t})\n})",
+    "description": "template basic collection"
+  }
+}

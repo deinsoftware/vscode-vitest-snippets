@@ -1,7 +1,7 @@
 {
   "name": "vitest-snippets",
   "description": "VS Code Vitest snippets for JS and TS",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "displayName": "Vitest Snippets",
   "publisher": "deinsoftware",
   "icon": "images/light-icon.png",
@@ -75,6 +75,10 @@
         "path": "./snippets/assertion.json"
       },
       {
+        "language": "javascript",
+        "path": "./templates/collection.json"
+      },
+      {
         "language": "javascriptreact",
         "path": "./snippets/import.json"
       },
@@ -107,6 +111,10 @@
         "path": "./snippets/assertion.json"
       },
       {
+        "language": "javascriptreact",
+        "path": "./templates/collection.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/import.json"
       },
@@ -139,6 +147,10 @@
         "path": "./snippets/assertion.json"
       },
       {
+        "language": "vue",
+        "path": "./templates/collection.json"
+      },
+      {
         "language": "typescript",
         "path": "./snippets/import.json"
       },
@@ -171,6 +183,10 @@
         "path": "./snippets/assertion.json"
       },
       {
+        "language": "typescript",
+        "path": "./templates/collection.json"
+      },
+      {
         "language": "typescriptreact",
         "path": "./snippets/import.json"
       },
@@ -201,6 +217,10 @@
       {
         "language": "typescriptreact",
         "path": "./snippets/assertion.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./templates/collection.json"
       }
     ]
   },
@@ -210,10 +230,10 @@
     "test:ui": "vitest --ui"
   },
   "volta": {
-    "node": "18.14.2",
-    "npm": "9.5.0"
+    "node": "20.16.0",
+    "npm": "10.8.1"
   },
   "devDependencies": {
-    "vitest": "0.29.1"
+    "vitest": "2.0.5"
   }
 }

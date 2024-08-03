@@ -29,6 +29,7 @@ The quick and easy way to create and use Vitest with [VS Code](https://code.visu
   - [Expect](#expect)
   - [Any](#any)
   - [Assertion](#assertion)
+  - [Collection](#collection)
 - [Keyboard](#keyboard)
 - [Settings](#settings)
 - [About](#about)
@@ -202,6 +203,12 @@ Below is a list of all available snippets and the triggers of each one. The `░
 |    `tte→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowError(░)</code>                        |
 | `ttemis→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingInlineSnapshot()</code>   |
 |  `ttems→` | <code>expect(() => {<br/>&nbsp;&nbsp;█<br/>}).toThrowErrorMatchingSnapshot()</code>         |
+
+### Collection
+
+|   Trigger | Result                                                                                      |
+| --------: | ------------------------------------------------------------------------------------------- |
+|    `vcb→` | <code>import { it, expect, describe } from 'vitest'<br/><br/>describe('░group', () => {<br/>&nbsp;&nbsp;it('░should', () => {<br/>&nbsp;&nbsp;&nbsp;&nbsp;const expected = '░expected'<br/>&nbsp;&nbsp;&nbsp;&nbsp;const actual = ░group(░argument)<br/>&nbsp;&nbsp;&nbsp;&nbsp;expect(actual).toBe(expected)█<br/>&nbsp;&nbsp;})<br />})</code> |
 
 ⇧ [Back to menu](#menu)
 
