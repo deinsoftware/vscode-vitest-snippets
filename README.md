@@ -1,8 +1,8 @@
 # Vitest Snippets
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/deinsoftware.vitest-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.vitest-snippets)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/deinsoftware.vitest-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.vitest-snippets)
-[![Ratings](https://img.shields.io/visual-studio-marketplace/stars/deinsoftware.vitest-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.vitest-snippets)
+[![Version](https://badgen.net/vs-marketplace/v/deinsoftware.vitest-snippets)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.vitest-snippets)
+[![Installs](https://badgen.net/vs-marketplace/i/deinsoftware.vitest-snippets)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.vitest-snippets)
+[![Ratings](https://img.shields.io/badge/ratings-5.0%20%E2%98%85-yellow)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.vitest-snippets)
 [![license](https://img.shields.io/github/license/deinsoftware/vscode-vitest-snippets)](LICENSE.md)
 [![Open in VS Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/deinsoftware/vscode-vitest-snippets)
 
